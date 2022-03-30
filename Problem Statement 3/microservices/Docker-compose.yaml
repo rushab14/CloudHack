@@ -11,5 +11,104 @@ services:
         aliases:
           - landing-service
   # Add more services below
+  addition-service:
+    build: ./addition
+    hostname: addition-service
+    ports:
+      - 5051:5051
+    networks:
+      sample:
+        aliases:
+          - addition
+  subtraction-service:
+    build: ./subtraction
+    hostname: subtraction-service
+    ports:
+      - 5052:5052
+    networks:
+      sample:
+        aliases:
+          - subtraction
+  multiplication-service:
+    build: ./multiplication
+    hostname: multiplication-service
+    ports:
+      - 5053:5053
+    networks:
+      sample:
+        aliases:
+          - multiplication
+  division-service:
+    build: ./division
+    hostname: division-service
+    ports:
+      - 5054:5054
+    networks:
+      sample:
+        aliases:
+          - division
+  modulus-service:
+    build: ./modulus
+    hostname: modulus-service
+    ports:
+      - 5055:5055
+    networks:
+      sample:
+        aliases:
+          - modulus
+  gcd-service:
+    build: ./gcd
+    hostname: gcd-service
+    ports:
+      - 5056:5056
+    networks:
+      sample:
+        aliases:
+          - gcd
+  lcm-service:
+    build: ./lcm
+    hostname: lcm-service
+    ports:
+      - 5057:5057
+    networks:
+      sample:
+        aliases:
+          - lcm
+  exponent-service:
+    build: ./exponent
+    hostname: exponent-service
+    ports:
+      - 5058:5058
+    networks:
+      sample:
+        aliases:
+          - exponent
+  gt-service:
+    build: ./gt
+    hostname: gt-service
+    ports:
+      - 5059:5059
+    networks:
+      sample:
+        aliases:
+          - gt
+  lt-service:
+    build: ./lt
+    hostname: lt-service
+    ports:
+      - 5060:5060
+    networks:
+      sample:
+        aliases:
+          - lt
+  equals-service:
+    build: ./equals
+    hostname: equals-service
+    ports:
+      - 5061:5061
+    networks:
+      sample:
+        aliases:
+          - eq
 networks:
   sample:
